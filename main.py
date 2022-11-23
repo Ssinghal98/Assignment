@@ -51,12 +51,12 @@ def main () :
             teststr1 = input("Ask another question \n")
             #enter a validator here for question
             readwrite.appendquestions(validator.stringval(teststr1))
-            if checkquestion (teststr1) >= 2:
+            if checkquestion (validator.stringval(teststr1)) >= 2:
                 print ("You've already asked this question, Ask another question  \n")
                 while(True):
                     teststr2 = input("Ask me a question \n")
                     readwrite.appendquestions(validator.stringval(teststr2))
-                    if checkquestion(teststr2) >= 2:
+                    if checkquestion(validator.stringval(teststr2)) >= 2:
                         print ("You've already asked this question, Ask another question \n")
                         #add key value 
                         continue
