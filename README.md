@@ -21,6 +21,7 @@ Loading : visual effects module using ANSI.
 readwrite : has functions for I/O on responses and questions files.
 
 Working : 
+User opens Main.py
 Input a yes/no question for the magic 8ball.
 The string will be validated and the user will be prompted to input again if the format is wrong. Expected format is plain string with no special characters or numbers.
 if the string is validated, the user enters the GUI.
